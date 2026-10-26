@@ -1,0 +1,54 @@
+{
+  "name": "@promopilot/dmarc-checker",
+  "version": "1.0.0",
+  "description": "Validate DMARC records from the command line: policy strength, pct, alignment, rua/ruf report addresses and external-destination authorization. Zero-dependency Node.js CLI, library and GitHub Action. Free online version by PromoPilot.",
+  "keywords": [
+    "dmarc",
+    "dmarc-checker",
+    "dmarc-record",
+    "email-authentication",
+    "email-deliverability",
+    "email-security",
+    "spf",
+    "dkim",
+    "dns",
+    "cli",
+    "nodejs",
+    "github-action",
+    "promopilot"
+  ],
+  "homepage": "https://promopilot.link/en/tools/dmarc-checker.php?utm_source=github&utm_medium=repo&utm_campaign=tools&utm_content=dmarc-checker",
+  "bugs": {
+    "url": "https://github.com/ksanyok/dmarc-checker/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksanyok/dmarc-checker.git"
+  },
+  "license": "MIT",
+  "author": "Alexandr Krikun (https://github.com/ksanyok)",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "dmarc-checker": "bin/cli.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

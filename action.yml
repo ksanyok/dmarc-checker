@@ -1,0 +1,16 @@
+name: "DMARC Checker by PromoPilot"
+description: "Validate a domain's DMARC record: policy, alignment and reporting addresses."
+author: "Alexandr Krikun"
+branding:
+  icon: "shield"
+  color: "purple"
+inputs:
+  args:
+    description: "Arguments passed to the dmarc-checker CLI, e.g. \"example.com\""
+    required: true
+runs:
+  using: composite
+  steps:
+    - name: Run dmarc-checker
+      shell: bash
+      run: node "$GITHUB_ACTION_PATH/bin/cli.js" ${{ inputs.args }}
