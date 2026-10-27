@@ -91,7 +91,7 @@ Options:
   --strict          Exit with code 1 on warnings too
   -h, --help        Show this help
 
-Online version (no install): https://promopilot.link/en/tools/dmarc-checker.php
+Online version (no install): https://promopilot.link/en/tools/dmarc-checker.php?utm_source=github&utm_medium=cli&utm_campaign=tools&utm_content=dmarc-checker
 ```
 
 ## Use as a library
